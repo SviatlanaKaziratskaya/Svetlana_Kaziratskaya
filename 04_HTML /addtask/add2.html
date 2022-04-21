@@ -3,6 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        .aa {
+  position: absolute;
+  left: 16px;
+  width: 20px;
+  height: 20px;
+}
+        .bb {
+  position: relative;  
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+}
+        .cc {
+  position: absolute;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+}
+    </style>
 </head>
 <body>
     <img src="python.svg" alt="Python" title="логотип Python" align="right" height="240">
@@ -64,9 +86,9 @@
     <p>Это комментарий</p>
     <p>Комментарии можно вставлять в любое место в строке, но помните, что Python 
         <br>проигнорирует всё, что идёт после &#39; &#35; &#39;.</p>
-        <div  align="left"><a href="base1.html"><img src="prev.png" alt="prev" title="вернуться на предыдущую страницу"></a></div>
-        <div align="center"><a href="#q1"><img src="home.png" alt="home" title="вернуться к содержанию"></a></div>
-        <div  align="right"><a href="base3.html"><img src="next.png" alt="next" title="перейти на следующую страницу"></a></div>
+        <a href="#"><img class="aa" src="left.svg" alt="prev" title="вернуться на предыдущую страницу" width="30" height="30"></a>
+        <a href="#q1"><img class="bb" src="home.svg" alt="home" title="вернуться к содержанию" width="30" height="30"></a>
+        <a href="base2.html"><img class="cc" src="right.svg" alt="next" title="перейти на следующую страницу" width="30" height="30"></a>
     <pre>
 
 
