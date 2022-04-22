@@ -6,16 +6,17 @@
 </head>
 <body>
     <table align="center" border="0">
-    <tr>
+    <tr valign="top">
     <td>
     <h3>Простая форма поиска с вариантами:</h3>
     <form action="http://fe.it-academy.by/TestForm.php" method="post">
         <fieldset>
             <legend>Строка поиска</legend>
-            <input type="text" maxlength="10">
+            <input type="text" maxlength="10">&#42;
             <input type="submit" value="Искать">
             <p><input checked type="radio" name="radio" value="q1">на сайте
                 <input type="radio" name="radio" value="w1">в google</p>
+            <p><em>Длина запроса не более 10 символов</em></p>
         </fieldset>
     </form>
     </td>
@@ -28,11 +29,12 @@
             <input type="submit" value="Искать">
             <p><input type="radio" name="radio" value="q1">на сайте
                 <input checked type="radio" name="radio" value="w1">в google</p>
+            <p><em>&#42; - обязательное поле <br>Автофокус в поле поиска</em></p>
         </fieldset>
     </form>
 </td>
 </tr>
-<tr>
+<tr valign="top">
     <td>
     <h3>Простая форма авторизации:</h3>
     <form action="http://fe.it-academy.by/TestForm.php" method="post">
@@ -42,6 +44,7 @@
             <div><input type="text" id="pass" required><label for="pass">&#42;Пароль</label></div>
             <p><input type="checkbox" name="stay" value="yes">Оставаться в системе</p>
             <input type="submit" value="Войти">
+            <p><em>&#42; - обязательное поле</em></p>
         </fieldset>
     </form>
 </td>
@@ -60,7 +63,7 @@
     </form>
 </td>
 </tr>
-<tr>
+<tr valign="top">
     <td>
     <h3>Отзыв:</h3>  
     <form action="http://fe.it-academy.by/TestForm.php" method="post">
@@ -71,6 +74,7 @@
                 <textarea name="forma" cols="10" rows="5">Форма отправки</textarea>
                 <p><input type="checkbox" name="stay" value="yes">Оставаться в системе</p>
                 <input type="submit" value="Отправить">
+                <p><em>&#42; - обязательное поле</em></p>
             </fieldset>
     </form>
 </td>
@@ -101,7 +105,7 @@
     </form>
 </td>
 </tr>
-<tr>
+<tr valign="top">
     <td>
         <h3>Загрузка файла на сервер:</h3>
     <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
