@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .wrap{
+            background-color:lightgray;
+            display: flex;
+            flex-direction: row;
+        }
+        .menu{
+            width: 15em;
+            background-color: darkgray;
+        }
+        .articles{
+            display: flex;
+            flex-direction: column;
+        }
+        .content{
+            background-color: gray;
+            margin-bottom: 2em;
+        }
+        .photo{
+            text-align: right;
+        }
+        .footer{
+            background-color: darkgray;   
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <div class="menu">Блок навигации
+    <ul>
+        <li>Ширина 15em</li>
+        <li>Должени присутствовать цвет фона</li>
+        <li>Располагается слева</li>
+        <li>Блок навигации наполните достаточным контентом, чтобы по высоте он начинал захватвать вторую статью, как показано в данном примере</li>
+    </ul>
+    <br>
+    <br>
+    </div>
+    <div class="articles">
+    <div class="content">Статья 1
+    <p>Размер блока:
+        <br>Занимает всю доступню ширину
+        <br>Должен присутствовать цвет фона
+        <br>Во всех "статьях" сделайте отступ снизу от соседей равным 2em, при помощи свойства margin-bottom
+    </p>
+    </div>
+    <div class="content">Статья 2
+    <p>Размер блока:
+        <br>Занимает всю доступню ширину
+        <br>Должен присутствовать цвет фона
+        <br>Во всех "статьях" сделайте отступ снизу от соседей равным 2em, при помощи свойства margin-bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.
+    </p>
+    <div class="photo"><img src="icon_mail.png" alt=""></div>
+    </div>
+    </div>
+    </div>
+    <div class="footer">
+    <p>Нижний блок, подвал. Занимает всю доступню ширину. Высота определяется помещенным внутрь контентом.</p></div>
+</body>
+</html>
